@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Doer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Your daily To-Do's</h1>
+  </header>
+
+  <main>
+    <!-- Add task form -->
+    <form>
+      <input type="text" placeholder="Enter a new task" name="task">
+      <select name="priority">
+        <option value="high">High</option>
+        <option value="middle">Middle</option>
+        <option value="low">Low</option>
+      </select>
+      <button type="submit" class="add-task">Add Task</button>
+    </form>
+
+    <!-- Clear all button -->
+    <button class="clear-all">Clear All</button>
+
+    <!-- Task list container -->
+    <section class="task-list"></section>
+
+    <!-- Task counter -->
+    <span class="task-count">Total tasks: 0</span>
+
+    <!-- Filter select -->
+    <select id="filter-select">
+      <option value="all">All Tasks</option>
+      <option value="high">High</option>
+      <option value="middle">Middle</option>
+      <option value="low">Low</option>
+      <option value="completed">Completed</option>
+      <option value="incomplete">Incomplete</option>
+    </select>
+  </main>
+
+  <footer>
+    <p>© 2025 To-Doer app | Designed by Iso Seo</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

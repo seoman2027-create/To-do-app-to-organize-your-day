@@ -1,0 +1,148 @@
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Body */
+body {
+  background-color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+}
+
+/* Main container */
+main {
+  width: 400px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  margin: 40px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Form input */
+form input[type="text"] {
+  width: 70%;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+form select {
+  width: 25%;
+  padding: 8px;
+  margin-left: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+/* Add task button */
+form button.add-task {
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+form button.add-task:hover {
+  background-color: #0056b3;
+}
+
+/* Clear all button */
+button.clear-all {
+  width: 100%;
+  padding: 10px;
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+button.clear-all:hover {
+  background-color: #b02a37;
+}
+
+/* Task items */
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 8px;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+/* Completed */
+.task-item.completed {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+/* Delete button */
+.delete-btn {
+  background-color: #ffc107;
+  border: none;
+  padding: 5px;
+  margin-left: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.delete-btn:hover {
+  background-color: #e0a800;
+}
+
+/* Task counter */
+.task-count {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Filter */
+#filter-select {
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  margin-top: 15px;
+  border: 1px solid #ccc;
+}
+
+/* Footer */
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 5%;
+  width: 100%;
+  background: #f1f1f1;
+  text-align: center;
+  padding: 10px;
+}
